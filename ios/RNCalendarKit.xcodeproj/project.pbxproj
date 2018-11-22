@@ -91,8 +91,7 @@
 				8BF9FE02219DA12200AD4FCE /* RNCalendarKitManager.swift */,
 				8BF9FE03219DA12200AD4FCE /* RNCalendarKitManager.m */,
 			);
-			name = RNCalendarKit;
-			path = ../../../CalendarKit/ios/RNCalendarKit;
+			path = RNCalendarKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +241,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNCalendarKit/RNCalendarKit-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -278,6 +278,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNCalendarKit/RNCalendarKit-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
