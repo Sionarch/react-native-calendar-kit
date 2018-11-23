@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNCalendarKit
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/Sionarch/react-native-calendar-kit"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
