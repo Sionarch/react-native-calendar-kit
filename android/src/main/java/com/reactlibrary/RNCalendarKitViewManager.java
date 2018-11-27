@@ -11,7 +11,6 @@ import android.widget.FrameLayout;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.controller.AbstractDraweeControllerBuilder;
-import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.views.image.GlobalImageLoadListener;
