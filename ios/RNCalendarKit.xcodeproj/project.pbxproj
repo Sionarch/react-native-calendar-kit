@@ -13,6 +13,37 @@
 		8BF9FE06219DA12200AD4FCE /* RNCalendarKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9FE03219DA12200AD4FCE /* RNCalendarKitManager.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8BDB38BC21B000C50090BAD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDB38B521B000C50090BAD2 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9483FD1A4F3019B2F52E119F78BE279D;
+			remoteInfo = CalendarKit;
+		};
+		8BDB38BE21B000C50090BAD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDB38B521B000C50090BAD2 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B32AFE191FA319DEB650520A01E8E4F0;
+			remoteInfo = DateToolsSwift;
+		};
+		8BDB38C021B000C50090BAD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDB38B521B000C50090BAD2 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17F56C3FD3C2AB775438009B9D1F5892;
+			remoteInfo = Neon;
+		};
+		8BDB38C221B000C50090BAD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDB38B521B000C50090BAD2 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6FEB8363E72F220286A00450419E48EB;
+			remoteInfo = "Pods-RNCalendarKit";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -28,6 +59,7 @@
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNCalendarKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCalendarKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2708C2E4E9654E4A6398BA /* libPods-RNCalendarKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNCalendarKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BDB38B521B000C50090BAD2 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		8BF9FE00219DA12200AD4FCE /* RNCalendarKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCalendarKit.swift; sourceTree = "<group>"; };
 		8BF9FE01219DA12200AD4FCE /* RNCalendarKit-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCalendarKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		8BF9FE02219DA12200AD4FCE /* RNCalendarKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCalendarKitManager.swift; sourceTree = "<group>"; };
@@ -78,9 +110,21 @@
 		74C238B81911DC96D76F053F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BDB38B521B000C50090BAD2 /* Pods.xcodeproj */,
 				3C2708C2E4E9654E4A6398BA /* libPods-RNCalendarKit.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BDB38B621B000C50090BAD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BDB38BD21B000C50090BAD2 /* libCalendarKit.a */,
+				8BDB38BF21B000C50090BAD2 /* libDateToolsSwift.a */,
+				8BDB38C121B000C50090BAD2 /* libNeon.a */,
+				8BDB38C321B000C50090BAD2 /* libPods-RNCalendarKit.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		8BF9FDFF219DA12200AD4FCE /* RNCalendarKit */ = {
@@ -140,12 +184,49 @@
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8BDB38B621B000C50090BAD2 /* Products */;
+					ProjectRef = 8BDB38B521B000C50090BAD2 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* RNCalendarKit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8BDB38BD21B000C50090BAD2 /* libCalendarKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCalendarKit.a;
+			remoteRef = 8BDB38BC21B000C50090BAD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8BDB38BF21B000C50090BAD2 /* libDateToolsSwift.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDateToolsSwift.a;
+			remoteRef = 8BDB38BE21B000C50090BAD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8BDB38C121B000C50090BAD2 /* libNeon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNeon.a;
+			remoteRef = 8BDB38C021B000C50090BAD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8BDB38C321B000C50090BAD2 /* libPods-RNCalendarKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-RNCalendarKit.a";
+			remoteRef = 8BDB38C221B000C50090BAD2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		30F5F936C71E0E926285C520 /* [CP] Check Pods Manifest.lock */ = {
