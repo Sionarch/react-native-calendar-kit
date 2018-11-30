@@ -6,13 +6,22 @@ target 'RNCalendarKit' do
   # use_frameworks!
 
   # Pods for RNCalendarKit
-
+  
   pod 'CalendarKit', :git => 'https://github.com/Sionarch/CalendarKit.git'
+
+  framework_file_names = ['libDateToolsSwift.a', 'libNeon.a', 'libCalendarKit.a']
 
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
         config.build_settings['SWIFT_VERSION'] = '4.2'
+      end
+      if target.name == 'Pods-RNCalendarKit'
+        installer.pods_project.files.select { |f|
+          framework_file_names.include? f.name
+        }.each do |file|
+          target.frameworks_build_phase.add_file_reference(file)
+        end
       end
     end
   end
